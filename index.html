@@ -1,0 +1,37 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Internal Website Landing Page
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <script>
+   function handleClick(event) {
+    event.preventDefault();
+    const button = document.getElementById('redirectButton');
+    button.innerHTML = '<i class="fas fa-check"></i>';
+    setTimeout(() => {
+      window.location.href = 'http://10.19.160.220';
+    }, 1000);
+   }
+  </script>
+ </head>
+ <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="text-center p-6 bg-white rounded-lg shadow-lg">
+   <img alt="RTS logo" class="mx-auto mb-4" height="150" src="RTS logo Windows.jpg" width="150"/>
+   <h1 class="text-2xl font-bold mb-2">
+    Welkom bij ZABBIX RTS
+   </h1>
+   <p class="text-gray-600 mb-6">
+    dit is de interne zabbixserver voor RTS en haar klanten
+   </p>
+   <a class="inline-block bg-red-500 text-white font-bold py-2 px-4 rounded hover:bg-red-700 transition duration-300" href="http://10.19.160.220" id="ik ben een collega." onclick="handleClick(event)">
+    Go to Website
+   </a>
+  </div>
+ </body>
+</html>
