@@ -15,7 +15,7 @@
     const button = document.getElementById('redirectButton');
     button.innerHTML = '<i class="fas fa-check"></i>';
     setTimeout(() => {
-      window.location.href = 'http://10.19.160.220/zabbix.php?action=dashboard.view&dashboardid=1';
+      window.location.href = 'http://10.19.160.220';
     }, 1000);
    }
   </script>
@@ -29,8 +29,8 @@
    <p class="text-gray-600 mb-6">
     dit is de interne zabbixserver voor RTS en haar klanten
    </p>
-   <a class="inline-block bg-red-500 text-white font-bold py-2 px-4 rounded hover:bg-red-700 transition duration-300" href="http://10.19.160.220/zabbix.php?action=dashboard.view&dashboardid=1" id="ik ben een collega." onclick="handleClick(event)">
-    Go to Website
+   <a class="inline-block bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition duration-300" href="http://10.19.160.220" id="redirectButton" onclick="handleClick(event)">
+    ik ben een collega
    </a>
   </div>
  </body>
